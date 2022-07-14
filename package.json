@@ -1,74 +1,136 @@
 {
-  "name": "Red-Dragon-Bot",
-  "version": "2.0.0",
-  "description": "WhatsApp Using Lib Baileys Multi Device",
-  "main": "index.js",
-  "type": "commonjs",
-  "scripts": {
-    "start": "node index.js"
+  "creds": {
+    "noiseKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "YC/4lIfzw7II0FxnZbGhP+cuD7hgWexcMnyqD18Nm2M="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "yM+VVC6zLR99vm+sG41T+rm/zllqE0kN+vgFLryYHm0="
+      }
+    },
+    "signedIdentityKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "WIPrqy47QyfSwcEnT19dNU/gM7g3aPehf9nYGWGitE4="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "1+a95a4HitIARVSvd2m3HKWHKyYA0FxCbxEaqe1QmTg="
+      }
+    },
+    "signedPreKey": {
+      "keyPair": {
+        "private": {
+          "type": "Buffer",
+          "data": "eFmr4qnavJcXVpeZlS/vfqIBdsOTLZj7abvn3rRJPlU="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "7zDdv8HZJJkXw5jlOX8Mh48/jvZXu6mFqUlyN4KOFWM="
+        }
+      },
+      "signature": {
+        "type": "Buffer",
+        "data": "BAB5PtZbZ9gwumiLXWMXhyof8iokO0WcG9/x048aCP/vTypvk5LH7XFaMQy6M7j/wYqD3PYGid2dGlq72w5AAg=="
+      },
+      "keyId": 1
+    },
+    "registrationId": 2,
+    "advSecretKey": "7Xhmeh0nhfWJbMPBBMN1wXzqr10SS1vGQU3rz79EcmQ=",
+    "nextPreKeyId": 31,
+    "firstUnuploadedPreKeyId": 31,
+    "serverHasPreKeys": true,
+    "account": {
+      "details": "COiXyWMQjce/lgYYAQ==",
+      "accountSignatureKey": "4hhBWifxM4NvBu+hG0nY4yUkz8JTfnxw9k23uIQ/fEU=",
+      "accountSignature": "qnJX1rMSN30Pp9zE1ei1+lQsrkPzypUxCxFa7VrlQlarb4rATsEk/WoTTwdWQafUe8SUAiwtNz9qoUo75JgzCA==",
+      "deviceSignature": "aIdi6887yBtz6cTHHbctkfhX0WAbpyO28rnt3tbO4lLxcaFQWpfgtUIhet8fwXQy2UvCvyVE868+nsp1qAi4AA=="
+    },
+    "me": {
+      "id": "94705839387:3@s.whatsapp.net",
+      "verifiedName": "",
+      "name": "I'ᗰ ᔕᑭᗩᗰᗴ ᗷᗝƳ 🧐"
+    },
+    "signalIdentities": [
+      {
+        "identifier": {
+          "name": "94705839387:3@s.whatsapp.net",
+          "deviceId": 0
+        },
+        "identifierKey": {
+          "type": "Buffer",
+          "data": "BeIYQVon8TODbwbvoRtJ2OMlJM/CU358cPZNt7iEP3xF"
+        }
+      }
+    ],
+    "lastAccountSyncTimestamp": 1657791376,
+    "myAppStateKeyId": "AAAAACNU"
   },
-  "keywords": [
-    "termux",
-    "whatsapp",
-    "2022",
-    "RedDragon",
-    "base",
-    "baileys-md",
-    "bot",
-    "bot-md",
-    "multi-device"
-  ],
-  "author": "NexusNw",
-  "license": "MIT",
-  "dependencies": {
-    "@adiwajshing/baileys": "^4.0.1",
-    "@adiwajshing/keyed-db": "^0.2.4",
-    "awesome-phonenumber": "^2.64.0",
-    "axios": "^0.24.0",
-    "chalk": "^4.1.2",
-    "cheerio": "^1.0.0-rc.10",
-    "child_process": "^1.0.2",
-    "crypto": "^1.0.1",
-    "file-type": "^16.5.3",
-    "fluent-ffmpeg": "^2.1.2",
-    "fs": "0.0.1-security",
-    "got": "^11.8.3",
-    "g-i-s": "^2.1.6",
-    "google-it": "^1.6.2",
-    "human-readable": "^0.2.1",
-    "jimp": "^0.16.1",
-    "jsdom": "^16.4.0",
-    "lowdb": "^2.1.0",
-    "mongoose": "^6.2.1",
-    "moment-timezone": "^0.5.34",
-    "mumaker": "^1.0.0",
-    "node-cron": "^3.0.0",
-    "node-fetch": "^2.6.1",
-    "node-webpmux": "^3.1.0",
-    "os": "^0.1.2",
-    "path": "^0.12.7",
-    "perf_hooks": "0.0.1",
-    "pino": "^7.0.5",
-    "qrcode-terminal": "^0.12.0",
-    "request": "^2.88.2",
-    "remove.bg": "^1.3.0",
-    "scrape-primbon": "^1.1.0",
-    "util": "^0.12.4",
-    "yargs": "^17.2.1",
-    "xfarr-api": "^1.0.2",
-    "yt-search": "^2.10.2"
-  },
-  "directories": {
-    "lib": "lib",
-    "src": "src"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nexusNw/Gojo-Satoru.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nexusNw/Gojo-Satoru/issues"
-  },
-  "homepage": "https://github.com/nexusNw/Gojo-Satoru#readme"
-}
+  "keys": {
+    "preKeys": {
+      "1": {
+        "private": {
+          "type": "Buffer",
+          "data": "yE52JpdcpwiqXk3FRQk/aX4LVAwP3bgEVkw9/GwTN3w="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "Bp4RX2cRVQ6A1IyG8oJRHC6N9zR1y9vP3hJkgJ47d0Y="
+        }
+      },
+      "2": {
+        "private": {
+          "type": "Buffer",
+          "data": "WOtatFGpU107oGq3xVpoKMukNcRri8f/8TlZdqb6In4="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "54vUb+SR8DNuCZStN4v2dg4XOZu+PjWDcAfizob2mz4="
+        }
+      },
+      "3": {
+        "private": {
+          "type": "Buffer",
+          "data": "WGe6A7MirzKLxQB9TzpnUFiVSXbwVHTDdkLj1/WdAkY="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "48uPlN92WYzCfrFKiuWuqrBs/5ECu3UcF0MJKvEL410="
+        }
+      },
+      "4": {
+        "private": {
+          "type": "Buffer",
+          "data": "8Bl6Gaext1tp2ulXeL0tCoCoJ9+QJvgN7HGJbmtinlM="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "mYQ05Vqew4LtD9GfgXZ7PbGB2FqzXYTsuete+S96MhM="
+        }
+      },
+      "5": {
+        "private": {
+          "type": "Buffer",
+          "data": "UB5HfL8GWHbyODOu1aXGnKTsHiGnAlp1Jr8mLvOoEW0="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "bypZl5+qBLM/7ww+VMgOI88CiDmnGaNfa05RBeJrOBI="
+        }
+      },
+      "6": {
+        "private": {
+          "type": "Buffer",
+          "data": "YHoegiCeE71ABtngdcSJJpDJ+yxZzCa60Y+GZXAzvUU="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "t+QE9GSVm3FQ5lpuCR+FoQAgstByRwUB4MdPg6+udkw="
+        }
+      },
+      "7": {
+        "private": {
+          "type": "Buffer",
+          "data": "4HF/D2wVas7244Prg8y9nKr9Fp6xrJ9/7P/Z…
